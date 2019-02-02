@@ -8,21 +8,21 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>22.3.0</version>
+		<version>24.2.0</version>
 		<relativePath />
 	</parent>
 
-	<groupId>com.mycompany</groupId>
-	<artifactId>GaussFiltering</artifactId>
+	<groupId>edu.monash</groupId>
+	<artifactId>SomeSortOfFiltering</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 
-	<name>Gauss Filtering</name>
-	<description>A Maven project implementing an ImageJ command.</description>
-	<url>http://mycompany.com/imagej/gauss-filtering/</url>
-	<inceptionYear>2017</inceptionYear>
+	<name>SomeSortOf Filtering</name>
+	<description>A Maven project implementing an ImageJ command ... some template.</description>
+	<url>http://monash.doesnotexist.edu/imagej/SomeSortOfFiltering/</url>
+	<inceptionYear>2019</inceptionYear>
 	<organization>
-		<name>My Company</name>
-		<url>http://mycompany.com/</url>
+		<name>Monash Micro Imaging</name>
+		<url>http://monash.edu/</url>
 	</organization>
 	<licenses>
 		<license>
@@ -34,12 +34,11 @@
 	<developers>
 		<!-- See https://imagej.net/Team -->
 		<developer>
-			<id>ctrueden</id>
-			<name>Curtis Rueden</name>
-			<url>http://imagej.net/User:Rueden</url>
+			<id>vhilsens</id>
+			<name>Bunsen Honeydew</name>
+			<url></url>
 			<roles>
-				<role>founder</role>
-				<role>lead</role>
+
 				<role>developer</role>
 				<role>debugger</role>
 				<role>reviewer</role>
@@ -50,7 +49,7 @@
 	</developers>
 	<contributors>
 		<contributor>
-			<name>Yili Zhao</name>
+			<name>Dr Bunsen Honeydow</name>
 			<url>http://imagej.net/User:Panovr</url>
 			<roles><role>founder</role></roles>
 			<properties><id>panovr</id></properties>
@@ -65,8 +64,8 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://github.com/imagej/example-imagej-command</connection>
-		<developerConnection>scm:git:git@github.com:imagej/example-imagej-command</developerConnection>
+		<connection>scm:git:git://github.com/volkerH/example-imagej-command</connection>
+		<developerConnection>scm:git:git@github.com:volkerH/example-imagej-command</developerConnection>
 		<tag>HEAD</tag>
 		<url>https://github.com/imagej/example-imagej-command</url>
 	</scm>
@@ -79,10 +78,11 @@
 	</ciManagement>
 
 	<properties>
-		<package-name>com.mycompany.imagej</package-name>
-		<main-class>com.mycompany.imagej.GaussFiltering</main-class>
+		<package-name>edu.monash</package-name>
+		<main-class>edu.monash.CellCounting</main-class>
 		<license.licenseName>bsd_2</license.licenseName>
 		<license.copyrightOwners>My Company, Inc.</license.copyrightOwners>
+		<imagej.app.directory>C:/Users/Volker/Desktop/Fiji.app</imagej.app.directory>
 	</properties>
 
 	<repositories>
@@ -96,6 +96,10 @@
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>imagej</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej-legacy</artifactId>
 		</dependency>
 	</dependencies>
 </project>
